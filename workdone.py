@@ -35,20 +35,23 @@ workdone(force3, displacement3)
 # When work is against gravity like lifting luggage  #
 ######################################################
 
-def workdone1(mass, gravtiy, displacement):
+def workdone1(mass, gravity, displacement):
     return print(f"Workdone = {mass*gravtiy*displacement}")
 
 mass = 15#kg
 displacement4 = 1.5#m
 
-workdone1(mass=15, gravtiy=9.8, displacement=displacement4)
+workdone1(mass=15, gravity=9.8, displacement=displacement4)
 
 
-########################################################
-############### When object is in motion ###############
-########################################################
+###############################################################
+# When object is in motion like a ball falling from a ground. #
+###############################################################
 
 def workdone2(mass, final_velocity, initial_velocity):
 	return print(f"Workdone = {0.5 * mass * ((final_velocity ** 2) - (initial_velocity ** 2))}")
 
-workdone2(2, 2, 1)
+mass = 15#kg
+fv = 10#m/s
+fi = 5#m/s
+workdone2(mass, fv, fi)
