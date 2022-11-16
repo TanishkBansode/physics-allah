@@ -42,3 +42,13 @@ mass = 15#kg
 displacement4 = 1.5#m
 
 workdone1(mass=15, gravtiy=9.8, displacement=displacement4)
+
+
+########################################################
+############### When object is in motion ###############
+########################################################
+
+def workdone2(mass, final_velocity, initial_velocity):
+	return print(f"Workdone = {0.5 * mass * ((final_velocity ** 2) - (initial_velocity ** 2))}")
+
+workdone2(2, 2, 1)
